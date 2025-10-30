@@ -38,9 +38,9 @@ console.log('🔍 Scanning for large images...\n');
 const largeFiles = scanDirectory(publicDir);
 
 if (largeFiles.length === 0) {
-  console.log('✅ All images are optimized!');
+  console.log(' All images are optimized!');
 } else {
-  console.log(`⚠️  Found ${largeFiles.length} large images that need optimization:\n`);
+  console.log(` Found ${largeFiles.length} large images that need optimization:\n`);
   
   largeFiles
     .sort((a, b) => b.size - a.size)
